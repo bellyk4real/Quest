@@ -5,10 +5,17 @@
 
 html {
     color: #222;
+    background-color: red;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
 }
 
+
+body {
+  height: 100% !important;
+  background-color: red !important;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
