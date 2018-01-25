@@ -4,13 +4,305 @@
 {% block meta_description %}Travel app{% endblock %}
 
 {% block body %}
-		<!--Prompt for vevry old browsers>
+    <!--Prompt for vevry old browsers>
         <!-[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Site Content -->
+    <!-- Site Content -->
 
-		<p>QUEST</p>
+    <!-- NAVIGATION -->
+    <div class="container">
+        <nav class="main-nav navbar navbar-expand-lg navbar-light">
+            <div>
+                <img src="{{ url_for('static', filename='images/icon.png') }}" alt="nav-logo" class="nav-logo" />
+                <a class="nav-quest" href="#">QUEST</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav-items navbar-nav">
+                    <a class="nav-item nav-link active" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">MY TRIPS</a>
+                    <a class="nav-item nav-link" href="#">CREATE TRIPS</a>
+                    <a class="nav-item nav-link" href="#">GET APP</a>
+                    <a class="nav-item nav-link" href="#">LOGIN</a>
+                    <a class="nav-item nav-link" href="#">SIGN UP</a>
+
+                    <!-- <span><img src="{{ url_for('static', filename='images/login-icon.png') }}" alt="login"></span>-->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- BANNER -->
+
+
+    <section id="banner" class="container">
+        <div class="row banner-head">
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+                <div class="banner-top">
+                    <h2 class="banner-body-header">One Quest is better than two of something else</h2>
+                </div>
+                <div class="banner-body-text">
+                    Quest is a this and that blah blah that lets you blah blah and also do a lot of plent many things, please ignore the text and focus on the design,, I basically was typing anything that came into my head because i dont want to use lorem ipsum text. Feel
+                    the raw naked quest of the road
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--DEALS SECTION/FEATURED QUESTS-->
+
+    <div class="container">
+      <h2>Quest Deals</h2>
+        <div class="row">
+            <div class="col-lg">
+                <div class="upcoming-trips">
+                    <div class="row">
+                        <div class="trip-item-1">
+                            <div class="row trip-deatils">
+                                <div class="col-md-3">
+                                    <p class="upcoming-trips-price">
+                                        N566,500
+                                    </p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="upcoming-trips-text">
+                                        <h3 class="upcoming-text-header"> Marzoma, Italy</h3>
+                                        <p class="upcoming-text-desc">
+                                            Exciting and diverse, the ancient feeling makes and breaks the touring rules. Scouring the globe for inspiration, our Italian based trips will bring out the purity in you Design Team is inspired by fashion’s most covetable trends; providing you with a
+                                            cutting edge wardrobe season upon season.
+                                        </p>
+                                        <p class="upcoming-trip-date">
+                                            15th December 2018
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="upcoming-trip-join">
+                                  <span><img src="{{ url_for('static', filename='images/join-icon.png') }}" width="25" height="25"></span>
+                                  <span>JOIN TRIP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg">
+                <div class="upcoming-trips">
+                    <div class="row">
+                        <div class="trip-item-2">
+                            <div class="row trip-deatils">
+                                <div class="col-md-3">
+                                    <p class="upcoming-trips-price">
+                                        N566,500
+                                    </p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="upcoming-trips-text">
+                                        <h3 class="upcoming-text-header"> Kutuput, Florida Bay</h3>
+                                        <p class="upcoming-text-desc">
+                                            Exciting and diverse, the ancient feeling makes and breaks the touring rules. Scouring the globe for inspiration, our Italian based trips will bring out the purity in you Design Team is inspired by fashion’s most covetable trends; providing you with a
+                                            cutting edge wardrobe season upon season.
+                                        </p>
+                                        <p class="upcoming-trip-date">
+                                            15th December 2018
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="upcoming-trip-join">
+                                  <span><img src="{{ url_for('static', filename='images/join-icon.png') }}" width="25" height="25"></span>
+                                  <span>JOIN TRIP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--SMALL TRIP CARD SECTION-->
+
+
+    <div class="container">
+      <div class="row small-trips">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/home-img-3.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>OKPOLOPOLO, <br/>KOGI STATE</b></h4>
+              <p class="small-trips-date">10TH, MARCH 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/home-img-4.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>RIO DE JANERO, <br />BRASIL</b></h4>
+              <p class="small-trips-date">25TH, MAY 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/small-trips-3.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>HELSINKI USIMOO<br /> FINLAND</b></h4>
+              <p class="small-trips-date">14TH, AUGUST 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/small-trips-4.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>SAMBISA FOREST, <br /> BORNO</b></h4>
+              <p class="small-trips-date">19TH, SEPTEMBER 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <div class="row small-trips">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/small-trips-5.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>OKPOLOPOLO, <br/>KOGI STATE</b></h4>
+              <p class="small-trips-date">10TH, MARCH 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/small-trips-6.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>RIO DE JANERO, <br />BRASIL</b></h4>
+              <p class="small-trips-date">25TH, MAY 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/small-trips-7.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>HELSINKI USIMOO<br /> FINLAND</b></h4>
+              <p class="small-trips-date">14TH, AUGUST 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="{{ url_for('static', filename='images/small-trips-8.jpg') }}" alt="Trips Avatar" style="width:100%">
+            <div class="container">
+              <h4 class="small-trips-desc"><b>SAMBISA FOREST, <br /> BORNO</b></h4>
+              <p class="small-trips-date">19TH, SEPTEMBER 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="create-trip">
+        <div class="row">
+          <div class="col-md-3">
+
+
+          </div>
+          <div class="col-md-9">
+            <h4 class="create-trip-top">Cant find where you want to go?</h4>
+            <div class="create-trip-button">
+              CREATE A TRIP
+            </div>
+            <p class="create-trip-text">
+              Do you have a place you wanna go thats not on our list of featured trips,
+              why not create a trip, our team of something will get an estimate of the
+              cost and other requirements and then we will publish
+              among our featured trips, you also have the option of making a trip private
+              and sharing with just family and friends.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--FOORER SECTION-->
+
+    <section id="footer">
+      <div class="main-footer">
+      <div class="container">
+        <div class="footer-section">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="footer-heading">Quest World</h3>
+                  <p>
+
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <h3 class="footer-heading">Locations</h3>
+                  <ul class="footer-location-list">
+                    <li>Alabama</li>
+                    <li>Sambisa</li>
+                    <li>Kutuput</li>
+                    <li>Tokyo</li>
+                    <li>Florida</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="footer-location-list">
+                    <li>Baga</li>
+                    <li>Rome</li>
+                    <li>Berlin</li>
+                    <li>Vienna</li>
+                    <li>Salasa</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
 
 {% endblock %}

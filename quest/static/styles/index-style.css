@@ -1,0 +1,325 @@
+.main-nav {
+  border-radius: 7px;
+  background-color: #333333 !important;
+  margin-top: 20px;
+}
+
+
+.nav-items{
+  margin-left: 35%;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #fff !important;
+  line-height: 1.714;
+}
+
+.nav-item {
+  color: #fff !important;
+  line-height: 1.714;
+}
+
+.nav-logo {
+  left: 57px;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-quest {
+  font-size: 18px;
+  color: rgb(255, 208, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  line-height: 1.333;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-quest:hover {
+  font-size: 18px;
+  color: rgb( 255, 208, 0 ) !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-decoration: none;
+}
+
+.nav-login {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+}
+
+
+/**BANNER*/
+.banner-head {
+  border-radius: 7px;
+  margin-top: 30px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/banner.png');
+}
+
+.banner-top {
+  margin-top: 12%;
+}
+.banner-body-header{
+  font-size: 36px;
+  font-family: "Montserrat";
+  color: rgb( 245, 235, 249 );
+  font-weight: bold;
+  line-height: 1.147;
+  text-align: right;
+}
+
+.banner-body-text {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  line-height: 1.75;
+  text-align: right;
+}
+
+
+/**UPCOMING TRIPS*/
+
+.upcoming-trips {
+  margin-top: 70px;
+  width: 100%;
+  padding: 5px;
+}
+
+.trip-item-1 {
+  background-image: url("../images/home-img-1.jpg");
+  background-size: cover;
+  border-radius: 7px;
+}
+
+.trip-item-2 {
+  background-image: url("../images/home-img-2.jpg");
+  background-size: cover;
+  border-radius: 7px;
+}
+
+.upcoming-trips-price{
+  margin-top: 20%;
+  margin-left: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgb( 168, 0, 230 );
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  line-height: 1;
+  text-align: left;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.upcoming-trips-text{
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 21%;
+  border-radius: 10px;
+  background-color: rgb( 84, 60, 97 );
+  opacity: 0.8;
+}
+
+.upcoming-text-header{
+  padding: 5px;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb( 255, 249, 249 );
+  font-weight: bold;
+  line-height: 2.083;
+  text-align: center;
+}
+
+.upcoming-text-desc{
+  padding: 5px;
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: rgb( 239, 230, 230 );
+  line-height: 1.5;
+  text-align: center;
+}
+
+.upcoming-trip-date {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: center;
+}
+
+.upcoming-trip-join {
+  padding: 8px 12px 8px 12px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb( 230, 0, 134 );
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left: 62%;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/*Small trips section*/
+.small-trips {
+margin-top: 25px;
+}
+
+.small-trips-single {
+  border-radius: 7px;
+  background-color: rgb( 255, 255, 255 );
+  opacity: 0.949;
+  padding: 20px;
+}
+
+.small-trips-price {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  background-color: rgb( 168, 0, 230 );
+  text-align: left;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.small-trips-desc {
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb( 81, 3, 123 );
+  text-align: center;
+}
+
+.small-trips-date {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb( 89, 81, 81 );
+  text-align: center;
+}
+
+.card {
+  border-radius: 7px;
+  background-color: rgb( 255, 255, 255 );
+  opacity: 0.949;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.small-trips-price{
+  margin-top: 20%;
+  margin-left: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgb( 168, 0, 230 );
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  line-height: 1;
+  text-align: left;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.create-trip {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/create-trip.jpg');
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.create-trip-top {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb( 246, 245, 247 );
+  text-align: center;
+  margin-top: 5%;
+}
+
+.create-trip-button {
+  width: 15%;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb( 246, 245, 247 );
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb( 168, 0, 230 );
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 42%;
+  margin-bottom: 25px;
+  padding: 8px 12px 8px 12px;
+}
+
+.create-trip-text {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  padding: 20px;
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-bottom: 2%;
+}
+
+
+/*FOOTER SECTION*/
+.main-footer {
+    background-color: rgb( 0, 0, 0 );
+    opacity: 0.8;
+
+}
+
+.footer-section{
+
+
+}
+
+.footer-heading {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+}
+
+.footer-location-list{
+
+  text-decoration: none !important;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb( 204, 204, 204 );
+  line-height: 2.6;
+  text-align: left;
+}
+
+
+
+/*Photoshop res*/
+
+.
+
+
+/*CARD*/

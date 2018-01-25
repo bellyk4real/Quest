@@ -5,16 +5,14 @@
 
 html {
     color: #222;
-    background-color: red;
     font-size: 1em;
     line-height: 1.4;
-    height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 body {
-  height: 100% !important;
-  background-color: red !important;
+  background-color: #543c61 !important;
 }
 /*
  * Remove text-shadow in selection highlight:
