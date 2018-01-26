@@ -10,7 +10,7 @@
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  color: #fff !important;
+  color: rgb(255, 208, 0) !important;
   line-height: 1.714;
 }
 
@@ -272,12 +272,12 @@ margin-top: 25px;
 }
 
 .create-trip-text {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Montserrat";
   color: rgb( 255, 255, 255 );
   text-align: center;
   padding: 20px;
-  margin-left: 23%;
+  margin-left: 20%;
   margin-right: 23%;
   margin-bottom: 2%;
 }
@@ -305,7 +305,7 @@ margin-top: 25px;
   line-height: 1.333;
 }
 
-.footer-location-list{
+.footer-location-list {
 
   text-decoration: none !important;
   font-size: 14px;
@@ -315,6 +315,21 @@ margin-top: 25px;
   text-align: left;
 }
 
+.footer-content {
+  font-size: 14px;
+  line-height: 2.6;
+  font-weight: 'Montserrat';
+  text-align: left;
+  color: rgb( 204, 204, 204 );
+}
+
+.section-tag {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  border-bottom: 1px;
+}
 
 
 /*Photoshop res*/
