@@ -24,12 +24,52 @@
       href="{{ url_for('static', filename='styles/main.css') }}">
     <link
       rel="stylesheet"
+      href="{{ url_for('static', filename='styles/login.css') }}">
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='styles/index-style.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     {% endblock %}
   </head>
   <body>
     {% block body %}
+    <!--Prompt for vevry old browsers>
+        <!-[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    {% block navbar %}
+
+    <!-- NAVIGATION -->
+
+
+
+    <div class="container">
+        <nav class="main-nav navbar navbar-expand-lg navbar-light">
+            <div>
+                <img src="{{ url_for('static', filename='images/icon.png') }}" alt="nav-logo" class="nav-logo" />
+                <a class="nav-quest" href="#">QUEST</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav-items navbar-nav">
+                    <a class="nav-item nav-link active" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">MY TRIPS</a>
+                    <a class="nav-item nav-link" href="#">CREATE TRIPS</a>
+                    <a class="nav-item nav-link" href="#">GET APP</a>
+                    <a class="nav-item nav-link" href="/login">LOGIN</a>
+                    <a class="nav-item nav-link" href="/signup">SIGN UP</a>
+
+                    <!-- <span><img src="{{ url_for('static', filename='images/login-icon.png') }}" alt="login"></span>-->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    {% endblock %}
 
 
     {% block script %}

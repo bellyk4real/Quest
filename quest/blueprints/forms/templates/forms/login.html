@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Quest -Sign in{% endblock %}
+{% block meta_description %}Travel app{% endblock %}
+
+{% block body %}
+    {{ super() }}
+    <!--SIGNIN FORM-->
+
+    <section>
+        <div class="container">
+            <div class="row login-section">
+                <div class="col-md-4 login-left">
+                    <h3>Sign In</h3>
+                    <p>
+                        Welcome Back, <br /> Are you ready for the next Quest?
+                    </p>
+                </div>
+                <div class="col-md-8 login-right" style="padding-left: 0 !important;">
+                    <div class="login">
+                        <form class="login-container">
+                            <p><input type="email" placeholder="Email"></p>
+                            <p><input type="password" placeholder="Password"></p>
+                            <p><input type="submit" value="SIGN IN"></p>
+                            <p>New to Quest? <a href="signup.html">Create an Account</a></p>
+
+                          <button class="loginBtn loginBtn--facebook">
+                            Sign in with Facebook
+                          </button>
+                          <br />
+                          <button class="loginBtn loginBtn--google">
+                            Sign in with Google
+                          </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
