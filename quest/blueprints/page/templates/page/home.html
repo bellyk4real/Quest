@@ -4,41 +4,7 @@
 {% block meta_description %}Travel app{% endblock %}
 
 {% block body %}
-    <!--Prompt for vevry old browsers>
-        <!-[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- Site Content -->
-
-    <!-- NAVIGATION -->
-    <div class="container">
-        <nav class="main-nav navbar navbar-expand-lg navbar-light">
-            <div>
-                <img src="{{ url_for('static', filename='images/icon.png') }}" alt="nav-logo" class="nav-logo" />
-                <a class="nav-quest" href="#">QUEST</a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="nav-items navbar-nav">
-                    <a class="nav-item nav-link active" href="#">ABOUT <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">MY TRIPS</a>
-                    <a class="nav-item nav-link" href="#">CREATE TRIPS</a>
-                    <a class="nav-item nav-link" href="#">GET APP</a>
-                    <a class="nav-item nav-link" href="#">LOGIN</a>
-                    <a class="nav-item nav-link" href="#">SIGN UP</a>
-
-                    <!-- <span><img src="{{ url_for('static', filename='images/login-icon.png') }}" alt="login"></span>-->
-                </div>
-            </div>
-        </nav>
-    </div>
-
-    <!-- BANNER -->
-
+{{ super() }}
 
     <section id="banner" class="container">
         <div class="row banner-head">
