@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 COPY . .
 RUN pip install --editable .
 
-CMD gunicorn -b 0.0.0.0:$PORT --access-logfile - "quest.app:create_app()"
+CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "quest.app:create_app()"

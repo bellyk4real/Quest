@@ -32,7 +32,7 @@ services:
     volumes:
       - '.:/quest'
     ports:
-      - '$PORT'
+      - '8000:8000'
 
 volumes:
   postgres:

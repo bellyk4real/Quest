@@ -30,6 +30,18 @@ class PasswordResetForm(Form):
 
 
 class SignupForm(ModelForm):
+    username_message = 'Letters, numbers and underscores only please.'
+
+    username = StringField(validators=[
+        Unique(
+            User.username,
+            get_session=lambda: db.session
+        ),
+        DataRequired(),
+        Length(1, 16),
+        Regexp('^\w+$', message=username_message)
+    ])
+    
     email = EmailField(validators=[
         DataRequired(),
         Email(),

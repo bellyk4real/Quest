@@ -23,8 +23,7 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_REDIS_MAX_CONNECTIONS = 5
 
 # SQLAlchemy.
-# db_uri = 'postgresql://quest:devpassword@postgres:5432/quest'
-db_uri = 'postgres://whoeuuohhmtirt:64b4737e6536f80f29d1d26273419cacf7a2a2869a70d8c4e43914330efbf92b@ec2-50-16-231-2.compute-1.amazonaws.com:5432/din812vclohoc'
+db_uri = 'postgresql://quest:devpassword@postgres:5432/quest'
 
 SQLALCHEMY_DATABASE_URI = db_uri
 SQLALCHEMY_TRACK_MODIFICATIONS = False
