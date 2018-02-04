@@ -1,6 +1,25 @@
 version: '2'
 
 services:
+  postgres:
+    image: 'postgres:9.5'
+    environment:
+      - POSTGRES_USER:'quest'
+      - POSTGRES_PASSWORD:'devpassword'
+      - POSTGRES_DB:'quest'
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+    ports:
+      - '5432:5432'
+
+  redis:
+    image: 'redis:3.0-alpine'
+    command: redis-server --requirepass devpassword
+    volumes:
+      - 'redis:/var/lib/redis/data'
+    ports:
+      - '6379:6379'
+
   website:
     build: .
     command: >
@@ -8,9 +27,13 @@ services:
         --access-logfile -
         --reload
         "quest.app:create_app()"
-    environment:
-      PYTHONUNBUFFERED: 'true'
+    env_file:
+      - '.env'
     volumes:
       - '.:/quest'
     ports:
       - '8000:8000'
+
+volumes:
+  postgres:
+  redis:
