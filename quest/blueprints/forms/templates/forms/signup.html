@@ -1,0 +1,44 @@
+{% extends 'layouts/app.html' %}
+{% import 'macros/form.html' as f with context %}
+
+{% block title %}Quest -Sign up{% endblock %}
+{% block meta_description %}Travel app{% endblock %}
+
+{% block body %}
+    {{ super() }}
+    <!--SIGNUP FORM-->
+
+    <section>
+        <div class="container">
+            <div class="row signup-section">
+                <div class="col-md-4 login-left">
+                    <h3>Sign Up</h3>
+                    <p>
+                        Join us and share our passion for quest
+                    </p>
+                </div>
+                <div class="col-md-8 login-right" style="padding-left: 0 !important;">
+                    <div class="login">
+                        <form class="login-container">
+                            <p><input type="text" placeholder="Username" name="signup-username"></p>
+                            <p><input type="email" placeholder="Email" name="signup-email"></p>
+                            <p><input type="password" placeholder="Password" name="signup-password"></p>
+                            <p><input type="password" placeholder="Confirm Password" name="signup-password-confirm"></p>
+                            <p><input type="submit" value="GET STARTED"></p>
+                            <p>Already have a Quest Account? <a href="/login">Sign in</a></p>
+
+                          <button class="loginBtn loginBtn--facebook">
+                            Sign up with Facebook
+                          </button>
+                          <br />
+                          <button class="loginBtn loginBtn--google">
+                            Sign up with Google
+                          </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
