@@ -1,6 +1,10 @@
 from datetime import timedelta
 
 DEBUG = True
+LOG_LEVEL = 'DEBUG'
+
+PAY_STACK_TEST_SECRET  = 'sk_test_f9153e963f26d104495a082c0b1b53f207dffefe'
+PAY_STACK_TEST_PUBLIC  = 'pk_test_8a48853663ac6b2c68f1e5cf9c346229c278d32d'
 
 # SERVER_NAME = 'localhost:5000'
 SECRET_KEY = 'insecurekeyfordev'

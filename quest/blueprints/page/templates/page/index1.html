@@ -1,42 +1,120 @@
-{% extends 'layouts/base.html' %}
+{% extends 'layouts/app.html' %}
 
-{% block title %}Test your luck against the roll of the dice{% endblock %}
-{% block meta_description %}Compete against yourself and others by guessing the
-outcome of a dice roll. Win points and dominate the leaderboard.{% endblock %}
+{% block title %}Quest{% endblock %}
+{% block meta_description %}Travel app{% endblock %}
 
 {% block body %}
-  <div class="container sm-margin-top">
-    <div class="row text-center lg-margin-bottom">
-      <h1>Feeling lucky?</h1>
-      <h3 class="text-muted">
-        Test your luck against the roll of the dice and win today
-      </h3>
-    </div>
-    <div class="row text-center">
-      <div class="col-lg-4">
-        <i class="fa fa-fw fa-4x fa-bullhorn text-primary"></i>
-        <h2>Place bets</h2>
-        <p class="text-muted">Correctly guess the dice's roll.</p>
-        <p>
-          <a href="#" class="btn btn-default">Sign up</a>
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <i class="fa fa-fw fa-4x fa-database text-primary"></i>
-        <h2>Win currency</h2>
-        <p class="text-muted">Gain coins if your guess is correct.</p>
-        <p>
-          <a href="#" class="btn btn-default">Sign up</a>
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <i class="fa fa-fw fa-4x fa-trophy text-primary"></i>
-        <h2>Leaderboard</h2>
-        <p class="text-muted">Compare your results to others.</p>
-        <p>
-          <a href="#" class="btn btn-default">Sign up</a>
-        </p>
-      </div>
-    </div>
-  </div>
-{% endblock %}
+{{ super() }}
+
+    <!--SINGLE TRIPS-->
+
+
+    <section>
+        <div class="container">
+          <div class="single-trips-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Inapueto, Morata de grannes <br /> Helsinki, Finland</h3>
+                </div>
+                <div class="col-md-6">
+                    <span>
+              <div class="single-trip-save">
+              <span><img src="img/new/save-icon.png" width="25" height="25"></span>
+                    <span class="single-save-text">SAVE TO MY TRIPS</span>
+                </div>
+                </span>
+                <span><a href="#">
+            <div class="single-trip-share">
+              <span><img src="img/new/share-icon.png" width="25" height="25"></span>
+                <span class="single-save-text">SHARE</span>
+            </div></a>
+            </span>
+        </div>
+        </div>
+        </div>
+
+        <div class="single-trip-banner">
+            <div class="single-banner-details">
+                <span class="details-hero">
+                    "A Central and Stylish Place in Finland"
+                </span>
+                <p>
+                    14th June 2018
+                </p>
+                <p>
+                    PRICE: <span>N789,450</span>
+                </p>
+                <div class="single-trip-join">
+                    <span><img src="img/new/join-icon-yellow.png" width="25" height="25"></span>
+                    <span class="single-join-text">JOIN TRIP</span>
+                </div>
+                <span class="single-time">
+                    Time Remaining: <br /> <span>21 days, 21:05:33</span>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone">Summary</label>
+                <div class="tab">
+                    <h1>Summary</h1>
+                    <p>
+                        Now that ProductList is managing the products in state, we’re poised to make modifications to this data in response to user input. Specifically, we want to increment the votes property on a product when the user votes for it. We just discussed that we
+                        can only make state modifications using this.setState(). So while a component can update its state, we should treat the this.state object as immutable. As touched on earlier, if we treat an array or object as immutable we never
+                        make modifications to it. For example, let’s say we have an array of numbers in state: Now that ProductList is managing the products in state, we’re poised to make modifications to this data in response to user input. Specifically,
+                        we want to increment the votes property on a product when the user votes for it. We just discussed that we can only make state modifications using this.setState(). So while a component can update its state, we should treat the
+                        this.state object as immutable. As touched on earlier, if we treat an array or object as immutable we never make modifications to it. For example, let’s say we have an array of numbers in state:
+                    </p>
+                </div>
+
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo">Travel Details</label>
+                <div class="tab">
+                    <h1>Travel Details</h1>
+                    <p>
+                        <ul>
+                            <li>Bag</li>
+                            <li>Shoe</li>
+                            <li>Clothe</li>
+                            <li>Jacket</li>
+                            <li>Hat</li>
+                        </ul>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus inventore perferendis cumque recusandae modi quasi minus laborum, ab at quod aliquid veritatis mollitia similique eos totam quisquam reiciendis, placeat temporibus! So while a component can
+                        update its state, we should treat the this.state object as immutable. As touched on earlier, if we treat an array or object as immutable we never make modifications to it. For example, let’s say we have an array of numbers in state:
+                    </p>
+                </div>
+
+                <input type="radio" name="tabs" id="tabthree">
+                <label for="tabthree">Map</label>
+                <div class="tab">
+                    <h1>Map</h1>
+                    <p>Map</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 people-going">
+              <img src="img/new/going-avatar.png" alt="going-img">
+              <p class="going-text">
+                <a>27 People Going</a> <br />
+                <a>Find out who is going</a>
+              </p>
+              <div class="single-trip-join">
+                  <span><img src="img/new/join-icon-yellow.png" width="25" height="25"></span>
+                  <span class="single-join-text">JOIN TRIP</span>
+              </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    &nbsp;
+
+
+
+
+  {% endblock %}
