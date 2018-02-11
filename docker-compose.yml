@@ -4,9 +4,9 @@ services:
   postgres:
     image: 'postgres:9.5'
     environment:
-      - POSTGRES_USER:'whoeuuohhmtirt'
-      - POSTGRES_PASSWORD:'64b4737e6536f80f29d1d26273419cacf7a2a2869a70d8c4e43914330efbf92b'
-      - POSTGRES_DB:'din812vclohoc'
+      - POSTGRES_USER:'quest'
+      - POSTGRES_PASSWORD:'devpassword'
+      - POSTGRES_DB:'quest'
     volumes:
       - 'postgres:/var/lib/postgresql/data'
     ports:
