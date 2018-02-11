@@ -23,12 +23,25 @@ services:
   website:
     build: .
     command: >
+<<<<<<< HEAD
       gunicorn -b 0.0.0.0:8000
         --access-logfile -
         --reload
         "quest.app:create_app()"
     env_file:
       - '.env'
+||||||| merged common ancestors
+      gunicorn -b 0.0.0.0:8000
+        --access-logfile -
+        --reload
+        "quest.app:create_app()"
+    environment:
+      PYTHONUNBUFFERED: 'true'
+=======
+      gunicorn -c "python:config.gunicorn" --reload "quest.app:create_app()"
+    env_file:
+      - '.env'
+>>>>>>> remotes/origin/dev-kenneth
     volumes:
       - '.:/quest'
     ports:

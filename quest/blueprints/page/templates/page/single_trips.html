@@ -5,6 +5,14 @@
 
 {% block body %}
 {{ super() }}
+    <!--Prompt for vevry old browsers>
+        <!-[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- Site Content -->
+
+    <!-- NAVIGATION -->
 
     <!--SINGLE TRIPS-->
 
@@ -19,13 +27,13 @@
                 <div class="col-md-6">
                     <span>
               <div class="single-trip-save">
-              <span><img src="img/new/save-icon.png" width="25" height="25"></span>
+              <span><img src="{{ url_for('static', filename='images/save-icon.png') }}" width="25" height="25"></span>
                     <span class="single-save-text">SAVE TO MY TRIPS</span>
                 </div>
                 </span>
                 <span><a href="#">
             <div class="single-trip-share">
-              <span><img src="img/new/share-icon.png" width="25" height="25"></span>
+              <span><img src="{{ url_for('static', filename='images/share-icon.png') }}" width="25" height="25"></span>
                 <span class="single-save-text">SHARE</span>
             </div></a>
             </span>
@@ -45,7 +53,7 @@
                     PRICE: <span>N789,450</span>
                 </p>
                 <div class="single-trip-join">
-                    <span><img src="img/new/join-icon-yellow.png" width="25" height="25"></span>
+                    <span><img src="{{ url_for('static', filename='images/join-icon-yellow.png') }}" width="25" height="25"></span>
                     <span class="single-join-text">JOIN TRIP</span>
                 </div>
                 <span class="single-time">
@@ -103,7 +111,7 @@
                 <a>Find out who is going</a>
               </p>
               <div class="single-trip-join">
-                  <span><img src="img/new/join-icon-yellow.png" width="25" height="25"></span>
+                  <span><img ssrc="{{ url_for('static', filename='images/join-icon-yellow.png') }}" width="25" height="25"></span>
                   <span class="single-join-text">JOIN TRIP</span>
               </div>
             </div>
@@ -114,7 +122,4 @@
 
     &nbsp;
 
-
-
-
-  {% endblock %}
+{% endblock %}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'layouts/app.html' %}
 {% import 'macros/form.html' as f with context %}
 
@@ -41,3 +42,57 @@
     </div>
   </div>
 {% endblock %}
+||||||| merged common ancestors
+=======
+{% extends 'layouts/app.html' %}
+{% import 'macros/form.html' as f with context %}
+
+{% block title %}Sign in to access your account{% endblock %}
+
+{% block body %}
+  {{ super() }}
+  <section>
+      <div class="container">
+          <div class="row login-section">
+              <div class="col-md-4 login-left">
+                <h3>Sign In</h3>
+                <p>
+                    Welcome Back, <br /> Are you ready for the next Quest?
+                </p>
+              </div>
+              <div class="col-md-8 login-right" style="padding-left: 0 !important;">
+
+                <div class='login'>
+                {% call f.form_tag('user.login', css_class='login-container') %}
+
+                  {% call f.form_group(form.identity,
+                                       autofocus='autofocus', placeholder='Username or Email') %}
+                  {% endcall %}
+
+                  {% call f.form_group(form.password, placeholder='Password') %}
+                  {% endcall %}
+
+                  <p><input type="submit" value="SIGN IN"></p>
+                  <p>New to Quest? <a href="{{ url_for('user.signup') }}">Create an Account</a></p>
+                  <button class="loginBtn loginBtn--facebook">
+                    Sign in with Facebook
+                  </button>
+                  <br />
+                  <button class="loginBtn loginBtn--google">
+                    Sign in with Google
+                  </button>
+                  <div class="text-center md-margin-top">
+                    <a href="{{ url_for('user.begin_password_reset') }}" class="text-muted">
+                      Forgot your password?
+                    </a>
+                  </div>
+                {% endcall %}
+
+              </div>
+              </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}
+>>>>>>> remotes/origin/dev-kenneth

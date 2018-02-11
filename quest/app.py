@@ -59,10 +59,20 @@ def create_app(settings_override=None):
     app.config.from_object('config.settings')
     app.config.from_pyfile('settings.py', silent=True)
 
+<<<<<<< HEAD
     if settings_override:
         app.config.update(settings_override)
 
     app.register_blueprint(admin)
+||||||| merged common ancestors
+=======
+    if settings_override:
+        app.config.update(settings_override)
+
+    app.logger.setLevel(app.config['LOG_LEVEL'])
+
+    app.register_blueprint(admin)
+>>>>>>> remotes/origin/dev-kenneth
     app.register_blueprint(page)
     app.register_blueprint(contact)
     app.register_blueprint(user)
