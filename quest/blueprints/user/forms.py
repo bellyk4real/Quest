@@ -41,7 +41,7 @@ class SignupForm(ModelForm):
         Length(1, 16),
         Regexp('^\w+$', message=username_message)
     ])
-    
+
     email = EmailField(validators=[
         DataRequired(),
         Email(),

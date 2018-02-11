@@ -20,10 +20,10 @@
                 {% call f.form_tag('user.login', css_class='login-container') %}
 
                   {% call f.form_group(form.identity,
-                                       autofocus='autofocus') %}
+                                       autofocus='autofocus', placeholder='Username or Email') %}
                   {% endcall %}
 
-                  {% call f.form_group(form.password) %}
+                  {% call f.form_group(form.password, placeholder='Password') %}
                   {% endcall %}
 
                   <p><input type="submit" value="SIGN IN"></p>
